@@ -46,7 +46,7 @@ Digital telemetry system for UAV using **Raspberry Pi Zero 2W**, **Pixhawk**, **
  Tailscale IP  →  Port 14550 UDP
 ```
 
-## 🚀 Setup Guide
+## Setup Guide
 
 ### 1. Raspberry Pi OS Setup
 
@@ -65,7 +65,7 @@ ssh pi@<raspberry-pi-ip>
 sudo apt update && sudo apt upgrade -y
 ```
 
-> 💡 **Tip:** Use `hostname -I` on the Pi to find its IP address, or check your router/hotspot admin panel.
+>  **Tip:** Use `hostname -I` on the Pi to find its IP address, or check your router/hotspot admin panel.
 
 ### 2. Tailscale VPN Setup
 
@@ -161,7 +161,7 @@ Check status:
 sudo systemctl status mavlink-router
 ```
 
-## 📡 Usage
+## Usage
 
 1. Power on the Raspberry Pi and Pixhawk
 2. Ensure both Pi and GCS laptop are connected to Tailscale
@@ -170,7 +170,7 @@ sudo systemctl status mavlink-router
 5. Optionally SSH into Pi and run `bash ~/connect_tmux.sh` to monitor the live MAVLink session
 
 
-## ⚙️ Configuration
+## Configuration
 
 ### `config/main.conf` — MAVLink Router
 
@@ -201,11 +201,11 @@ Pixhawk TELEM Port         USB-to-TTL Module
                            └──────────────────┘
 ```
 
-> ⚠️ Always connect **TX → RX** and **RX → TX** (cross-connect). Shared GND is required.
+> Always connect **TX → RX** and **RX → TX** (cross-connect). Shared GND is required.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 pi-mavlink-telemetry/
